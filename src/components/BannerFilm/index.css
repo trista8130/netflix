@@ -1,0 +1,62 @@
+.bannerfilm{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -10px;
+}
+
+.bannerfilm .filmline{
+    display: grid;
+    grid-template-columns: repeat(6,120px);
+    grid-column-gap: 5px;
+    overflow-x: scroll;
+}
+
+.bannerfilm .box{
+    border-bottom:3px solid transparent;
+    cursor: pointer;
+    
+}
+.bannerfilm .box:hover{
+    border-bottom:3px solid #E50914 ;
+    opacity: 1;
+}
+
+.bannerfilm .box p{
+    color: #ffffff;
+    opacity: 0.4;
+    font-size: 6px;
+    font-weight: 500;
+    margin: 5px 0 5px 0;
+}
+
+.bannerfilm .box p:hover{
+    opacity: 1;
+}
+
+@media only screen and (min-width:768px){
+    .bannerfilm .filmline{
+        grid-template-columns: repeat(6,220px);
+    }
+    .bannerfilm .box p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .bannerfilm{
+        padding-left: 60px;
+        margin-bottom: 55px;
+        top:-25px;
+    }
+    .bannerfilm .box p{
+        font-size: 20px;
+        line-height: 23px;
+        margin: 15px 0 10px 0;
+    }
+    .bannerfilm .filmline{
+        grid-template-columns: repeat(6,400px);
+    }
+
+}
